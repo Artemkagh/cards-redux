@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {Buttons, Content} from './Components'
+import {fetchCards} from './redux/actions/cards'
+import { useSelector, useDispatch } from "react-redux";
 
 function App() {
+  const dispatch = useDispatch();
+  const content = useSelector(({cards}) => cards.items);
+  const isLoaded = useSelector(({cards}) => cards.isLoaded);
+  const {category, sortBy} = useSelector (({filters}) => filters);
+  
+  React.useEffect(() => {
+    dispatch(fetchCards(category, sortBy));
+  }, [category, sortBy]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="maincontainer">
+      <p className='apptitle'>Это приложение-тест react + axios + redux-react + redux-thunk + json server + content loader + scss</p>
+      <Buttons activeCategory = {category} activeSort = {sortBy}/>
+      <Content items = {content} isLoaded = {isLoaded} />
     </div>
   );
 }

@@ -1,0 +1,74 @@
+{
+  "array": [
+    {
+      "id": 1,
+      "title": "Это первый объект!",
+      "category": 1,
+      "number": 4,
+      "alpha": "Г"
+    },
+    {
+      "id": 2,
+      "title": "Это второй объект!",
+      "category": 2,
+      "number": 6,
+      "alpha": "А"
+    },
+    {
+      "id": 3,
+      "title": "Это третий объект!",
+      "category": 3,
+      "number": 2,
+      "alpha": "Л"
+    },
+    {
+      "id": 4,
+      "title": "Это четвертый объект!",
+      "category": 4,
+      "number": 7,
+      "alpha": "У"
+    },
+    {
+      "id": 5,
+      "title": "Это пятый объект!",
+      "category": 2,
+      "number": 1,
+      "alpha": "Ц"
+    },
+    {
+      "id": 6,
+      "title": "Это шестой объект!",
+      "category": 2,
+      "number": 5,
+      "alpha": "Н"
+    },
+    {
+      "id": 7,
+      "title": "Это седьмой объект!",
+      "category": 3,
+      "number": 10,
+      "alpha": "Б"
+    },
+    {
+      "id": 8,
+      "title": "Это восьмой объект!",
+      "category": 3,
+      "number": 3,
+      "alpha": "Ы"
+    },
+    {
+      "id": 9,
+      "title": "Это девятый объект!",
+      "category": 1,
+      "number": 9,
+      "alpha": "Я"
+    },
+    {
+      "id": 10,
+      "title": "Это десятый объект!",
+      "category": 2,
+      "number": 8,
+      "alpha": "З"
+    }
+  ]
+}

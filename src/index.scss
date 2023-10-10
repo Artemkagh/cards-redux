@@ -1,0 +1,86 @@
+body{
+  background-color: rgb(218, 228, 164);
+  max-width: 1920px;
+  max-height: 1080px;
+  margin: 6px;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+.maincontainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 930px;
+  width: 100%;
+
+  .apptitle{
+    font-size: 2.5em;
+  }
+
+}
+
+.buttoncontainer{
+  width: 100%;
+  height: 130px;
+  border-radius: 13px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(238, 177, 153);
+
+  .buttonsort{
+    padding: 10px;
+    color: rgb(255, 255, 255);;
+    border-radius: 25px;
+    background-color: rgb(238, 127, 84);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .buttonsort_active{
+    padding: 10px;
+    color: rgb(255, 255, 255);;
+    border-radius: 25px;
+    background-color: rgb(84, 176, 238);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .buttonsort:hover{
+    background-color: rgb(84, 176, 238);
+  }
+
+}
+
+.contentcontainer{
+  width: 100%;
+  height: 620px;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+
+
+  margin-top: 40px;
+  border-radius: 13px;
+  background-color: rgb(153, 200, 238);
+
+  .elementcard{
+    width: 250px;
+    height: 280px;
+    margin: 0px 30px 0px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+    
+    p{
+      color: rgb(233, 95, 95);
+    }
+
+  }
+
+}
